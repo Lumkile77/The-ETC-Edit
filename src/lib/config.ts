@@ -1,0 +1,7 @@
+export const SITE_NAME = 'The ETC edit'
+export const SITE_TAGLINE = 'Candles · Treats · Recipes'
+export const INSTAGRAM_URL = 'https://www.instagram.com/themijoseph/?utm_source=ig_web_button_share_sheet'
+export const FACEBOOK_URL = 'https://www.facebook.com/themi.joseph.2025'
+export const PINTEREST_URL = 'https://nl.pinterest.com/themiej/_created/'
+export const CONTACT_EMAIL = 'themiej@gmail.com'
+export const LOGO_URL = '/images/Copilot_20260827_120907.png'

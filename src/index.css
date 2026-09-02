@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-50 text-ink-800 font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cream-700 px-6 py-3 text-sm font-medium text-cream-50 transition-all duration-300 hover:bg-cream-800 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cream-400 px-6 py-3 text-sm font-medium text-cream-800 transition-all duration-300 hover:bg-cream-100 hover:shadow-md active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-ink-600 transition-colors hover:text-cream-700;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-cream-200 bg-white px-4 py-3 text-ink-800 placeholder-ink-300 transition-colors focus:border-cream-500 focus:outline-none focus:ring-2 focus:ring-cream-300/50;
+  }
+  .card {
+    @apply rounded-2xl border border-cream-200 bg-white shadow-sm transition-all duration-300;
+  }
+}
+
+.masonry {
+  column-gap: 1rem;
+}
+@media (min-width: 640px) {
+  .masonry { column-count: 2; }
+}
+@media (min-width: 1024px) {
+  .masonry { column-count: 3; }
+}
+@media (min-width: 1280px) {
+  .masonry { column-count: 4; }
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf6ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #e0c191;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c6924f;
+}
