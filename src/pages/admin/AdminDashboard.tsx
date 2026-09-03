@@ -78,7 +78,7 @@ export default function AdminDashboard() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-8">
-        <div className="mb-6 flex gap-2">
+        <div className="mb-6 flex flex-wrap gap-2">
           {(['creations', 'recipes', 'messages'] as Tab[]).map((t) => (
             <button
               key={t}
@@ -93,6 +93,12 @@ export default function AdminDashboard() {
               )}
             </button>
           ))}
+          <Link
+            to="/admin/manual"
+            className="rounded-full bg-cream-100 px-5 py-2 text-sm font-medium text-ink-600 transition-all hover:bg-cream-200"
+          >
+            User Manual
+          </Link>
         </div>
 
         {loading ? (
