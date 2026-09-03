@@ -21,16 +21,10 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex flex-col gap-2">
               <Link
-                to="/admin/login"
+                to="/admin/login?auto=1"
                 className="inline-flex text-sm font-medium text-cream-700 underline-offset-4 transition-colors hover:text-cream-900 hover:underline"
               >
                 Admin view
-              </Link>
-              <Link
-                to="/admin/manual"
-                className="inline-flex text-sm font-medium text-cream-700 underline-offset-4 transition-colors hover:text-cream-900 hover:underline"
-              >
-                Admin manual
               </Link>
             </div>
           </div>

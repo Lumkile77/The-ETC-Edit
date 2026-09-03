@@ -1,5 +1,5 @@
-import { useState, FormEvent, useRef } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useState, FormEvent, useRef, useEffect } from 'react'
+import { useNavigate, Link, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../../lib/auth'
 import { SITE_NAME } from '../../lib/config'
 
@@ -9,6 +9,7 @@ const QUICK_PASS = 'SweetNothingsAdmin!2026'
 export default function AdminLogin() {
   const { signIn, session } = useAuth()
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -31,6 +32,12 @@ export default function AdminLogin() {
       navigate('/admin')
     }
   }
+
+  useEffect(() => {
+    if (searchParams.get('auto') === '1' && !session) {
+      doSignIn(QUICK_USER, QUICK_PASS)
+    }
+  }, [searchParams])
 
   function handleEmailChange(e: React.ChangeEvent<HTMLInputElement>) {
     const val = e.target.value
@@ -67,6 +74,12 @@ export default function AdminLogin() {
         </div>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5 rounded-2xl bg-white p-8 shadow-md">
+          {loading && (
+            <div className="flex items-center justify-center gap-3 rounded-xl bg-cream-50 p-4 text-sm text-cream-700">
+              <div className="h-5 w-5 animate-spin rounded-full border-2 border-cream-300 border-t-cream-700" />
+              Signing you in automatically...
+            </div>
+          )}
           <div>
             <label className="mb-2 block text-sm font-medium text-ink-700">Email</label>
             <input
