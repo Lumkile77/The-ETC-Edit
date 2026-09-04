@@ -67,7 +67,7 @@ export default function Home() {
               <p>After 40 years of having a structured routine, retirement brought a huge change to my life. The routine I had known for so long suddenly came to an end, and I had to find a new way of living.</p>
               <p>As I soon discovered, major lifestyle changes can affect not only your mental and emotional wellbeing, but my physical health too.</p>
               <p>I had always considered myself reasonably healthy. I exercised regularly, ate fairly well, enjoyed the occasional sweet treat and, of course, a glass or two of red wine socially.</p>
-              <p>That sounds quite healthy — don't you think?</p>
+              <p>That sounds quite healthy, don't you think?</p>
               <p>Then came my routine six-monthly blood test.</p>
               <p>My <strong className="text-ink-800">HbA1c came back at 6.2%.</strong></p>
               <p>I asked my doctor whether this could be improved. His response wasn't particularly encouraging. He told me it would be very difficult.</p>
