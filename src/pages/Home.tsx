@@ -74,7 +74,7 @@ export default function Home() {
               <p>The doctor prescribed Glucophage.</p>
               <p>I was devastated. This was the last health condition I wanted to face.</p>
               <p>After a pep talk and some convincing from my husband, I reluctantly went to the pharmacy. I took one tablet the following day and didn't feel quite myself. That night, I found myself reading about the medication, what it does and its possible side effects.</p>
-              <p>I'm not going to dwell on medication — there is plenty of information available about that.</p>
+              <p>I'm not going to dwell on medication there is plenty of information available about that.</p>
               <p className="font-serif text-xl font-semibold text-ink-800">Instead, this was where I drew the line.</p>
               <p>I wanted to be the one in a thousand.</p>
               <p>So I decided to take a serious look at my lifestyle.</p>
