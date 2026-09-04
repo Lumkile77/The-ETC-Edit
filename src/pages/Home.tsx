@@ -61,7 +61,7 @@ export default function Home() {
             <img src="/images/image%20copy.png" alt="The founder of The ETC Edit" className="float-right mb-6 ml-6 h-40 w-40 rounded-2xl object-cover shadow-md sm:h-52 sm:w-52" />
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-cream-600">The story behind {SITE_NAME}</p>
             <h2 className="mt-2 font-serif text-4xl font-semibold text-ink-800">My Lifestyle Audit</h2>
-            <p className="mt-4 font-serif text-xl italic leading-relaxed text-ink-500">Sometimes life changes your routine — and sometimes it changes you.</p>
+            <p className="mt-4 font-serif text-xl italic leading-relaxed text-ink-500">Sometimes life changes your routine and sometimes it changes you.</p>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-ink-600">
               <p className="font-serif text-2xl font-semibold text-ink-800">Retirement.</p>
               <p>After 40 years of having a structured routine, retirement brought a huge change to my life. The routine I had known for so long suddenly came to an end, and I had to find a new way of living.</p>
