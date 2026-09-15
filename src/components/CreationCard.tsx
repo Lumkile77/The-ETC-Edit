@@ -5,12 +5,14 @@ const categoryStyles: Record<string, string> = {
   candle: 'bg-cream-200 text-cream-800',
   treat: 'bg-wine-100 text-wine-700',
   recipe: 'bg-ink-100 text-ink-600',
+  craft: 'bg-cream-100 text-cream-700',
 }
 
 const categoryLabels: Record<string, string> = {
   candle: 'Candle',
   treat: 'Treat',
   recipe: 'Recipe',
+  craft: 'Craft',
 }
 
 export default function CreationCard({

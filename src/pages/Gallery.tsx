@@ -4,13 +4,14 @@ import type { Creation } from '../lib/types'
 import CreationCard from '../components/CreationCard'
 import Lightbox from '../components/Lightbox'
 
-type Filter = 'all' | 'candle' | 'treat' | 'recipe'
+type Filter = 'all' | 'candle' | 'treat' | 'recipe' | 'craft'
 
 const filters: { key: Filter; label: string }[] = [
   { key: 'all', label: 'All' },
   { key: 'candle', label: 'Candles' },
   { key: 'treat', label: 'Treats' },
   { key: 'recipe', label: 'Recipes' },
+  { key: 'craft', label: 'Crafts' },
 ]
 
 export default function Gallery() {
@@ -59,7 +60,7 @@ export default function Gallery() {
           Gallery
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-ink-500">
-          Browse candles, treats, and recipes. Click any piece to see it up close.
+          Browse candles, treats, crafts, and recipes. Click any piece to see it up close.
         </p>
       </div>
 

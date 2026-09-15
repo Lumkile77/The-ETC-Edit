@@ -342,6 +342,7 @@ function CreationForm({ creation, recipes, onDone }: { creation: Creation | null
             <option value="candle">Candle</option>
             <option value="treat">Treat</option>
             <option value="recipe">Recipe</option>
+            <option value="craft">Craft</option>
           </select>
         </div>
       </div>
